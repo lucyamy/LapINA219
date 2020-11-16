@@ -42,11 +42,13 @@ void begin();
 -------------
 void begin(TwoWire \*useWire);
 -------------
-This must be called before using any other function. It initialises the Wire library, and configures the chip.
+This must be called before using any other function. It initialises the **Wire** library, and configures the chip.
 
-If you want to use an I2C bus other than Wire, such as Wire1, then you can call begin() as, for example:
+If you want to use an I2C bus other than **Wire**, such as **Wire1**, then you can call **begin()** as, for example:
 
     mymonitor.begin(&Wire1);
+
+Remember to include any needed library for this bus. **LapINA219** automatically includes the **Wire** library.
 
 float shuntVoltage();  
 ---------------------------

@@ -2,7 +2,9 @@
 This is a simple current and voltage sensing library for the INA219 high-side Current Sensor. **LapINA219** provides basic current, voltage, and power monitoring, with a current resolution 0.1mA, maximum bus voltage of 16V, and maximum bus current of 400mA. It is designed to monitor a project's power, and is small and lightweight. There are other more complex libraries available if you need more control over the setup.
 
 The INA219 is a high-side current shunt and power monitor with an i2c interface. The INA219 monitors both shunt drop and supply voltage, with
-programmable conversion times and filtering. A programmable calibration value, combined with an internal multiplier, enables direct readouts in amps. An additional multiplying register calculates power in watts. **LapINA219** only uses this chip to monitor up to 16 volts, at 400mA. The INA219 has two i2c address select pins, which allow 16 programmable addresses, as follows:
+programmable conversion times and filtering. A programmable calibration value, combined with an internal multiplier, enables direct readouts in amps. An additional multiplying register calculates power in watts. **LapINA219** only uses this chip to monitor up to 16 volts, at 400mA.
+
+The INA219 has two i2c address select pins, which allow 16 programmable addresses, as follows:
 
      A1  A0  SLAVE ADDRESS
     GND GND  1000000 (0x40) 
@@ -34,7 +36,7 @@ The address parameter is required.
 **Library functions**
 ---------------------
 
-The functions provided by **LapX9C10X** are:
+The functions provided by **LapINA219** are:
 
 void begin();
 -------------

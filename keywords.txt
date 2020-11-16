@@ -1,0 +1,7 @@
+LapINA219	KEYWORD1
+reset	KEYWORD2
+shuntVoltage	KEYWORD2
+busVoltage	KEYWORD2
+shuntCurrent	KEYWORD2
+busPower	KEYWORD2
+
